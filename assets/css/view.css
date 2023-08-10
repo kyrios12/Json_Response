@@ -1,0 +1,6 @@
+#forminput{
+    position: relative;
+    display: flexbox;
+    text-align: center;
+    align-items: center;
+}
