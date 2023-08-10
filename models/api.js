@@ -4,7 +4,7 @@ module.exports = {
         const parsedData = JSON.parse(datainput);
         return parsedData;
       } catch (error) {
-        return { error: 'Invalid JSON input' };
+        return { error: 'Invalid input' };
       }
     },
   };
