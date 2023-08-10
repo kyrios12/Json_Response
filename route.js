@@ -11,7 +11,11 @@ application.get('/', (req, res) => {
   });
 
 
-
+  application.post('/api', (req, res) => {
+    const inputData = req.body.jsonInput;
+    const resp = api.processInput(inputData);
+    res.json(resp);
+  });
 
 application.listen(port, () => {
     console.log(`Server is running on port ${port}`);
